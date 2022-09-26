@@ -34,7 +34,7 @@ public class TaskDaoImpl implements TaskDao {
 		List<Map<String, Object>> resultList = jdbcTemplate.queryForList(sql);
 
 		//return用の空のListを用意
-		List<Task> list = new ArrayLisy<Task>();
+		List<Task> list = new ArrayList<Task>();
 
 		//二つのテーブルのデータをTaskにまとめる
 		for(Map<String, Object> result : resultList) {
